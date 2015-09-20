@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Mr. Rakoczy's Popcorn Sales Site Extravaganza</title>
+	</head>
+	<body>
+	<form action="form2.php" method="post" autocomplete="on">
+		<h1>Welcome to Mr. Rakoczy's Popcorn Sales Site Extravaganza!</h1>
+		<span>Buyer's Name:</span><br/><input type="text" name="name" placeholder="John Smith" autofocus required/><br/><br/>
+		<span>Street Address:</span><br/><input type="text" name="address" placeholder="321 Popcorn Way" required/><br/><br/>
+		<span>City, Province, Postal Code:</span><br/><input type="text" name="address2" placeholder="Candyland, BC, A2B 3C4" required/><br/><br/>
+		<br/>
+		<table border="1">
+		  <tr>
+		    <th>Product</th>
+		    <th>Price</th>		
+		    <th>Quantity</th>
+		  </tr>
+		  <tr>
+		    <td>Unpopped Popcorn (1lb)</td>
+		    <td>$3.00</td>		
+		    <td><input type="number" name="unpop" min="0" max="999"/></td>
+		  </tr>
+		  <tr>
+		    <td>Caramel Popcorn (2lb Can)</td>
+		    <td>$3.50</td>		
+		    <td><input type="number" name="caramel" min="0" max="999"/></td>
+		  </tr>
+		  <tr>
+		    <td>Caramel Nut Popcorn (2lb Can)</td>
+		    <td>$4.50</td>		
+		    <td><input type="number" name="caramel-nut" min="0" max="999"/></td>
+		  </tr>
+		  <tr>
+		    <td>Toffee Nut Popcorn (2lb Can)</td>
+		    <td><span class="toffee-pr">$5.00</span></td>		
+		    <td><input type="number" name="toffee" min="0" max="999"/></td>
+		  </tr>
+		</table>
+		<br/>
+		<h3>Payment Method</h3>
+		<input type="radio" name="pay-meth" value="visa">Visa</input><br/>
+		<input type="radio" name="pay-meth" value="mc">MasterCard</input><br/>
+		<input type="radio" name="pay-meth" value="disc">Discover Card</input><br/>
+		<input type="radio" name="pay-meth" value="cheque">Cheque</input><br/><br/>
+		
+		<input type="submit" name="submit" value="Sumbit Order"/>
+	</form>
+	</body>
+</html>

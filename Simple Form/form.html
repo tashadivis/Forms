@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<!--Create a PHP Web Form with a single button, a textbox for the users’ name, a textbox for the users
+email address, a larger textbox for user comments and a checkbox if they would like to be contacted. 
+When the user inputs their information and presses the button, a new page will open thanking them for 
+their input and displaying the time of input and all the information typed in from the start page. If the user 
+had the checkbox selected, then display a message saying “You will be contacted in a week for your input” otherwise say “Your input will remain anonymous”.-->
+</head>
+
+<body>
+	<form action="form.php" method="post" autocomplete="on">
+		<span>Full Name</span><br/><input type="text" name="name" autofocus required/><br/><br/>
+		<span>Email Address</span><br/><input type="email" name="email" required/><br/><br/>
+		<span>Message</span><br/><textarea placeholder="Enter your message here." name="message" rows="7" cols="50" ></textarea><br/><br/>
+		<span>Would you like to be contacted?</span><br/>
+		<!-- I know the assignment asked for a checkboxes, but I thought radio buttons would be more appropriate. -->
+		<input type="radio" name="contact" value="yes">Sure!</input>
+		<input type="radio" name="contact" value="no">NO</input><br/><br/>
+		<input type="submit" name="submit" value="Send"/>
+	</form>
+</body>
+
+</html>
