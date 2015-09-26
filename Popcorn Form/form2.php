@@ -21,8 +21,20 @@
 		$caramelnutpr = $caramelnut * 4.50;
 		$toffeepr = $toffee * 5;
 		
+		//$unpoppr = (int)$unpoppr;
+		//$caramelpr = (int)$caramelpr;
+		//$caramelnutpr = (int)$caramelnutpr;
+		//$toffeepr = (int)$toffeepr;
+		
 		$popnum = $unpop + $caramel + $caramelnut + $toffee;
 		$total = $unpoppr + $caramelpr + $caramelnutpr + $toffeepr;
+		
+		$unpoppr = number_format($unpoppr,2);
+		$caramelpr = number_format($caramelpr,2);
+		$caramelnutpr = number_format($caramelnutpr,2);
+		$toffeepr = number_format($toffeepr,2);
+		$total = number_format($total,2);
+
 	
 	echo "<h3>Customer:</h3>";
 	echo $name . "<br />";
@@ -39,7 +51,7 @@
 		  <tr>
 		    <td>Unpopped Popcorn</td>
 		    <td>$3.00</td>		
-		    <td>{$unpop}</td>
+		    <td>".$unpop."</td>
 		    <td>$ {$unpoppr}</td>
 		  </tr>
 		  <tr>
